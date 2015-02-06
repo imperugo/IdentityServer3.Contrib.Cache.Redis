@@ -10,7 +10,7 @@ for all distributed environments that are using Redis as cache server.
 
 ##How to install it
 
-##Install Core [![NuGet Status](http://img.shields.io/nuget/v/Thinktecture.IdentityServer3.Cache.Redis.svg?style=flat)](https://www.nuget.org/Thinktecture.IdentityServer3.Cache.Redis/)
+##Install Core [![NuGet Status](http://img.shields.io/nuget/v/Thinktecture.IdentityServer3.Cache.Redis.svg?style=flat)](http://www.nuget.org/packages/Thinktecture.IdentityServer3.Cache.Redis/)
 
 ```
 PM> Install-Package Thinktecture.IdentityServer3.Cache.Redis
