@@ -1,6 +1,6 @@
-# Thinktecture.IdentityServer3.Cache.Redis
+# IdentityServer3.Contrib.Cache.Redis
 
-Thinktecture.IdentityServer3.Cache.Redis is a library that offers the right implementation of 
+IdentityServer3.Contrib.Cache.Redis is a library that offers the right implementation of 
 
 - ```ICache<Client>```
 - ```ICache<IEnumerable<Scope>>```
@@ -10,10 +10,10 @@ for all distributed environments that are using Redis as cache server.
 
 ##How to install it
 
-##Install Core [![NuGet Status](http://img.shields.io/nuget/v/Thinktecture.IdentityServer3.Cache.Redis.svg?style=flat)](http://www.nuget.org/packages/Thinktecture.IdentityServer3.Cache.Redis/)
+##Install Core [![NuGet Status](http://img.shields.io/nuget/v/IdentityServer3.Contrib.Cache.Redis.svg?style=flat)](http://www.nuget.org/packages/IdentityServer3.Contrib.Cache.Redis/)
 
 ```
-PM> Install-Package Thinktecture.IdentityServer3.Cache.Redis
+PM> Install-Package IdentityServer3.Contrib.Cache.Redis
 ```
 
 Than register it on your Identity Server

@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
-		<id>Thinktecture.IdentityServer3.Cache.Redis</id>
-		<title>Thinktecture.IdentityServer3.Cache.Redis</title>
+		<id>IdentityServer3.Contrib.Cache.Redis</id>
+		<title>IdentityServer3.Contrib.Cache.Redis</title>
 		<version>$version$</version>
 		<authors>$author$</authors>
 		<owners>$author$</owners>
-		<licenseUrl>https://github.com/imperugo/Thinktecture.IdentityServer3.Cache.Redis/blob/master/LICENSE</licenseUrl>
-		<projectUrl>https://github.com/imperugo/Thinktecture.IdentityServer3.Cache.Redis</projectUrl>
+		<licenseUrl>https://github.com/imperugo/IdentityServer3.Contrib.Cache.Redis/blob/master/LICENSE</licenseUrl>
+		<projectUrl>https://github.com/imperugo/IdentityServer3.Contrib.Cache.Redis</projectUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>
-			Thinktecture.IdentityServer3.Cache.Redis is a library that includes the implementation for client, scope, and user stores using Redis as distribuited cache system.
+			IdentityServer3.Contrib.Cache.Redis is a library that includes the implementation for client, scope, and user stores using Redis as distribuited cache system.
 		</description>
 		<releaseNotes>
 			- Added ClientStoreCache

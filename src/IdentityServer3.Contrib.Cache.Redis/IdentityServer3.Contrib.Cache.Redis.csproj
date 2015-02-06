@@ -7,8 +7,8 @@
     <ProjectGuid>{975A1280-5F33-41AD-8747-50BAAE344F10}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Thinktecture.IdentityServer3.Cache.Redis</RootNamespace>
-    <AssemblyName>Thinktecture.IdentityServer3.Cache.Redis</AssemblyName>
+    <RootNamespace>IdentityServer3.Contrib.Cache.Redis</RootNamespace>
+    <AssemblyName>IdentityServer3.Contrib.Cache.Redis</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
@@ -68,7 +68,7 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="Thinktecture.IdentityServer3.Cache.Redis.nuspec">
+    <None Include="IdentityServer3.Contrib.Cache.Redis.nuspec">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

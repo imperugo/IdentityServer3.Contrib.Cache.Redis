@@ -7,7 +7,7 @@ using StackExchange.Redis.Extensions.Newtonsoft;
 using Thinktecture.IdentityServer.Core.Models;
 using Thinktecture.IdentityServer.Core.Services;
 
-namespace Thinktecture.IdentityServer3.Cache.Redis
+namespace IdentityServer3.Contrib.Cache.Redis
 {
 	public class ScopeStoreCache : ICache<IEnumerable<Scope>>
 	{

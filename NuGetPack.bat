@@ -1,1 +1,1 @@
-.\.nuget\NuGet.exe pack .\src\Thinktecture.IdentityServer3.Cache.Redis\Thinktecture.IdentityServer3.Cache.Redis.csproj -Prop Configuration=Release -OutputDirectory .\nuget\
+.\.nuget\NuGet.exe pack .\src\IdentityServer3.Contrib.Cache.Redis\IdentityServer3.Contrib.Cache.Redis.csproj -Prop Configuration=Release -OutputDirectory .\nuget\
