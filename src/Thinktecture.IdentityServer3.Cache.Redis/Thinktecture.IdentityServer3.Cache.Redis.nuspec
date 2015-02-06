@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+	<metadata>
+		<id>Thinktecture.IdentityServer3.Cache.Redis</id>
+		<title>Thinktecture.IdentityServer3.Cache.Redis</title>
+		<version>$version$</version>
+		<authors>$author$</authors>
+		<owners>$author$</owners>
+		<licenseUrl>https://github.com/imperugo/Thinktecture.IdentityServer3.Cache.Redis/blob/master/LICENSE</licenseUrl>
+		<projectUrl>https://github.com/imperugo/Thinktecture.IdentityServer3.Cache.Redis</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>
+			Thinktecture.IdentityServer3.Cache.Redis is a library that includes the implementation for client, scope, and user stores using Redis as distribuited cache system.
+		</description>
+		<releaseNotes>
+			- Added ClientStoreCache
+			- ScopeStoreCache
+			- UserServiceCache
+		</releaseNotes>
+		<copyright>Ugo Lattanzi</copyright>
+		<language>en-US</language>
+		<tags>Thinktecture IdentityServer OpenID Connect OpenIDConnect OAuth2 OWIN ASP.NET Katana WebApi SSO Federation Claims Identity Caching Redis</tags>
+		<dependencies>
+			<dependency id="StackExchange.Redis.Extensions.Newtonsoft" version="1.1.0" />
+		</dependencies>
+	</metadata>
+</package>
