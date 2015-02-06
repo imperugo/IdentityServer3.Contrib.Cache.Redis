@@ -2,9 +2,9 @@
 
 Thinktecture.IdentityServer3.Cache.Redis is a library that offers the right implementation of 
 
-- ICache<Client>
-- ICache<IEnumerable<Scope>>
-- ICache<IEnumerable<Claim>>
+- ```ICache<Client>```
+- ```ICache<IEnumerable<Scope>>```
+- ```ICache<IEnumerable<Claim>>```
 
 for all distributed environments that are using Redis as cache server.
 
