@@ -23,9 +23,16 @@ namespace IdentityServer3.Contrib.Cache.Redis
 			this.cacheClient = cacheClient;
 		}
 
-		public Task<IEnumerable<Claim>> GetAsync(string key)
+		public async Task<IEnumerable<Claim>> GetAsync(string key)
 		{
-			return cacheClient.GetAsync<IEnumerable<Claim>>(key);
+			var result = await cacheClient.GetAsync<object>(key);
+
+			if (result != null)
+			{
+				return await Task.FromResult(result as IEnumerable<Claim>);
+			}
+
+			return await Task.FromResult<IEnumerable<Claim>>(null);
 		}
 
 		public Task SetAsync(string key, IEnumerable<Claim> item)
