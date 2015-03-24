@@ -14,7 +14,7 @@ namespace IdentityServer3.Contrib.Cache.Redis
 		private readonly ICacheClient cacheClient;
 
 		public UserServiceCache(ConnectionMultiplexer connection)
-			: this(new StackExchangeRedisCacheClient(connection, new JsonSerializer()))
+			: this(new StackExchangeRedisCacheClient(connection, new NewtonsoftSerializer()))
 		{
 		}
 
