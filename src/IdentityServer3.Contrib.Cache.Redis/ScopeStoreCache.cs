@@ -4,8 +4,8 @@ using System.Threading.Tasks;
 using StackExchange.Redis;
 using StackExchange.Redis.Extensions.Core;
 using StackExchange.Redis.Extensions.Newtonsoft;
-using Thinktecture.IdentityServer.Core.Models;
-using Thinktecture.IdentityServer.Core.Services;
+using IdentityServer3.Core.Services;
+using IdentityServer3.Core.Models;
 
 namespace IdentityServer3.Contrib.Cache.Redis
 {
