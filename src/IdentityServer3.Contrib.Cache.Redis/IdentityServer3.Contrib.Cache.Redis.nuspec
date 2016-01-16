@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>IdentityServer3.Contrib.Cache.Redis</id>
-		<title>Thinktecture IdentityServer3 - Cache.Redis</title>
+		<title>IdentityServer3 - Cache.Redis</title>
 		<version>$version$</version>
 		<authors>$author$</authors>
 		<owners>$author$</owners>
@@ -10,19 +10,18 @@
 		<projectUrl>https://github.com/imperugo/IdentityServer3.Contrib.Cache.Redis</projectUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>
-			Thinktecture IdentityServer3 - Cache.Redis is a library that includes the implementation for client, scope, and user stores using Redis as distribuited cache system.
+			IdentityServer3 - Cache.Redis is a library that includes the implementation for client, scope, and user stores using Redis as distribuited cache system.
 		</description>
 		<releaseNotes>
-			- Added ClientStoreCache
-			- ScopeStoreCache
-			- UserServiceCache
-		</releaseNotes>
+      - Changed package dependency from Thinktecture.IdentityServer3 to IdentityServer3
+      - Updated all nuget package dependencies to their latest version
+    </releaseNotes>
 		<copyright>Ugo Lattanzi</copyright>
 		<language>en-US</language>
-		<tags>Thinktecture IdentityServer OpenID Connect OpenIDConnect OAuth2 OWIN ASP.NET Katana WebApi SSO Federation Claims Identity Caching Redis</tags>
+		<tags>IdentityServer OpenID Connect OpenIDConnect OAuth2 OWIN ASP.NET Katana WebApi SSO Federation Claims Identity Caching Redis</tags>
 		<dependencies>
-			<dependency id="Thinktecture.IdentityServer3" version="1.6.2" />
-			<dependency id="StackExchange.Redis.Extensions.Newtonsoft" version="1.1.8.0" />
+			<dependency id="IdentityServer3" version="2.3.0" />
+			<dependency id="StackExchange.Redis.Extensions.Newtonsoft" version="1.1.11.0" />
 		</dependencies>
 	</metadata>
 </package>
