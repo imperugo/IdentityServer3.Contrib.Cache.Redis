@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="IdentityServer3">
-      <HintPath>..\..\packages\IdentityServer3.2.3.0\lib\net45\IdentityServer3.dll</HintPath>
+      <HintPath>..\..\packages\IdentityServer3.2.4.0\lib\net45\IdentityServer3.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -49,11 +49,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="StackExchange.Redis.Extensions.Core">
-      <HintPath>..\..\packages\StackExchange.Redis.Extensions.Core.1.1.14.0\lib\net45\StackExchange.Redis.Extensions.Core.dll</HintPath>
+      <HintPath>..\..\packages\StackExchange.Redis.Extensions.Core.1.2.0.0\lib\net45\StackExchange.Redis.Extensions.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="StackExchange.Redis.Extensions.Newtonsoft">
-      <HintPath>..\..\packages\StackExchange.Redis.Extensions.Newtonsoft.1.1.11.0\lib\net45\StackExchange.Redis.Extensions.Newtonsoft.dll</HintPath>
+      <HintPath>..\..\packages\StackExchange.Redis.Extensions.Newtonsoft.1.2.0.0\lib\net45\StackExchange.Redis.Extensions.Newtonsoft.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
