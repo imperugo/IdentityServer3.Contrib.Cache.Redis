@@ -6,33 +6,27 @@ using StackExchange.Redis;
 using StackExchange.Redis.Extensions.Core;
 using StackExchange.Redis.Extensions.Newtonsoft;
 using IdentityServer3.Core.Services;
+using IdentityServer3.Contrib.Cache.Redis.CacheClient;
 
 namespace IdentityServer3.Contrib.Cache.Redis
 {
 	public class UserServiceCache : ICache<IEnumerable<Claim>>
 	{
-		private readonly ICacheClient cacheClient;
+		private readonly ICacheManager cacheClient;
 
 		public UserServiceCache(ConnectionMultiplexer connection)
-			: this(new StackExchangeRedisCacheClient(connection, new NewtonsoftSerializer()))
+			: this(new RedisCacheManager(connection))
 		{
 		}
 
-		public UserServiceCache(ICacheClient cacheClient)
+		public UserServiceCache(ICacheManager cacheClient)
 		{
 			this.cacheClient = cacheClient;
 		}
 
-		public async Task<IEnumerable<Claim>> GetAsync(string key)
+		public Task<IEnumerable<Claim>> GetAsync(string key)
 		{
-			var result = await cacheClient.GetAsync<object>(key);
-
-			if (result != null)
-			{
-				return await Task.FromResult(result as IEnumerable<Claim>);
-			}
-
-			return await Task.FromResult<IEnumerable<Claim>>(null);
+			return cacheClient.GetAsync<IEnumerable<Claim>>(key);
 		}
 
 		public Task SetAsync(string key, IEnumerable<Claim> item)
