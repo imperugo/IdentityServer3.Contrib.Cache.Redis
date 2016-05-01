@@ -2,23 +2,22 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using StackExchange.Redis;
-using StackExchange.Redis.Extensions.Core;
-using StackExchange.Redis.Extensions.Newtonsoft;
 using IdentityServer3.Core.Models;
 using IdentityServer3.Core.Services;
+using IdentityServer3.Contrib.Cache.Redis.CacheClient;
 
 namespace IdentityServer3.Contrib.Cache.Redis
 {
-	public class ScopeStoreCache : ICache<IEnumerable<Scope>>
+    public class ScopeStoreCache : ICache<IEnumerable<Scope>>
 	{
-		private readonly ICacheClient cacheClient;
+		private readonly ICacheManager cacheClient;
 
 		public ScopeStoreCache(ConnectionMultiplexer connection)
-			: this(new StackExchangeRedisCacheClient(connection, new NewtonsoftSerializer()))
+			: this(new RedisCacheManager(connection))
 		{
 		}
 
-		public ScopeStoreCache(ICacheClient cacheClient)
+		public ScopeStoreCache(ICacheManager cacheClient)
 		{
 			this.cacheClient = cacheClient;
 		}
