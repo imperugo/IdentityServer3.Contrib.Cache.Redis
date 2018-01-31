@@ -24,4 +24,7 @@
 			<dependency id="StackExchange.Redis.Extensions.Newtonsoft" version="2.3.0" />
 		</dependencies>
 	</metadata>
+<files>
+    <file src="bin\Release\IdentityServer3.Contrib.Cache.Redis.dll" target="lib" />
+</files>
 </package>
