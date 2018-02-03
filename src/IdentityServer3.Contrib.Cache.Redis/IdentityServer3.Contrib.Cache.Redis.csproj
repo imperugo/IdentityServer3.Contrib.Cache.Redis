@@ -66,6 +66,8 @@
     <Compile Include="CacheClient\RedisCacheManager.cs" />
     <Compile Include="ClientStoreCache.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedisAuthorizationCodeStore.cs" />
+    <Compile Include="RedisRefreshTokenStore.cs" />
     <Compile Include="ScopeStoreCache.cs" />
     <Compile Include="UserServiceCache.cs" />
   </ItemGroup>
