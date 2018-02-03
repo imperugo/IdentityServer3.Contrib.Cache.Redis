@@ -1,16 +1,14 @@
-﻿using System;
+﻿using IdentityServer3.Contrib.Cache.Redis.CacheClient;
+using IdentityServer3.Core.Services;
+using StackExchange.Redis;
+using System;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using StackExchange.Redis;
-using StackExchange.Redis.Extensions.Core;
-using StackExchange.Redis.Extensions.Newtonsoft;
-using IdentityServer3.Core.Services;
-using IdentityServer3.Contrib.Cache.Redis.CacheClient;
 
 namespace IdentityServer3.Contrib.Cache.Redis
 {
-	public class UserServiceCache : ICache<IEnumerable<Claim>>
+    public class UserServiceCache : ICache<IEnumerable<Claim>>
 	{
 		private readonly ICacheManager cacheClient;
 

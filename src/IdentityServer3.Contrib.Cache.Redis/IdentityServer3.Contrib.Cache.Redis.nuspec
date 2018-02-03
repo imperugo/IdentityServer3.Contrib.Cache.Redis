@@ -20,8 +20,11 @@
 		<language>en-US</language>
 		<tags>IdentityServer OpenID Connect OpenIDConnect OAuth2 OWIN ASP.NET Katana WebApi SSO Federation Claims Identity Caching Redis</tags>
 		<dependencies>
-			<dependency id="IdentityServer3" version="2.5.0" />
-			<dependency id="StackExchange.Redis.Extensions.Newtonsoft" version="1.3.3.0" />
+			<dependency id="IdentityServer3" version="2.6.1" />
+			<dependency id="StackExchange.Redis.Extensions.Newtonsoft" version="2.3.0" />
 		</dependencies>
 	</metadata>
+<files>
+    <file src="bin\Release\IdentityServer3.Contrib.Cache.Redis.dll" target="lib" />
+</files>
 </package>
