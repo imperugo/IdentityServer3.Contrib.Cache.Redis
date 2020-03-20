@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using StackExchange.Redis;
 using StackExchange.Redis.Extensions.Core;
+using StackExchange.Redis.Extensions.Core.Configuration;
 using StackExchange.Redis.Extensions.Newtonsoft;
 
 namespace IdentityServer3.Contrib.Cache.Redis.CacheClient
@@ -35,7 +36,7 @@ namespace IdentityServer3.Contrib.Cache.Redis.CacheClient
 			{
 				m_KeyPrefix = "idscache";
 			}
-			m_cacheClient = new StackExchangeRedisCacheClient(serializer);
+			m_cacheClient = new StackExchangeRedisCacheClient(serializer, new RedisConfiguration());
 		}
 
 		public RedisCacheManager(ConnectionMultiplexer connection)
